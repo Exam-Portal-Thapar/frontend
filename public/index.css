@@ -1,0 +1,203 @@
+body{
+    margin: 0px;     
+    display: flex;
+    flex-direction: column;
+}
+
+.root{
+    height: 100vh;
+}
+
+nav{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px -3px black;
+    align-content: space-around;
+    flex-wrap: wrap;
+    color: #1C5C83;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.back{
+    margin-left:4%;
+    cursor: pointer;
+}
+
+.marks{
+    margin-right: 4%;
+}
+
+
+main{
+    width: 92%;
+    height: 71%;
+    background-color: #1C5C83;
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    margin-top: 3%;
+    box-shadow: 6px 11px 20px -5px black;
+    color: aliceblue;
+    justify-content: space-around;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.top{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gen{
+    font-size: 1.17rem;
+    font-weight: bolder;
+}
+
+.MarkMenu{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    width: 15%;
+    justify-content: space-between;
+}
+
+.question{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.options{
+    display: flex;
+    height: 25%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.option{
+    display: flex;
+}
+
+.answer{
+    height: 15px;
+    width: 15px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+}
+
+.leftbtn input[type=button]{
+    height: 100%;
+    background-color: #ffffff;
+    color: #1C5C83;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: ease all 0.3s;
+}
+
+.rightbtn input[type=button]{
+    height: 100%;
+    background-color: #ffffff;
+    color: #1C5C83;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: ease all 0.3s;
+}
+
+.button:active{
+  scale: 1.1;
+  transition: ease all 0.1s;
+}
+
+.minutes{
+  border: none;
+  cursor: default;
+  width: 10%;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Hamburger */
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .burger input {
+    display: none;
+  }
+  
+  .burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+  }
+  
+  .burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+  }
+  
+  .burger input:checked ~ span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .burger input:checked ~ span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+  }
+
+  /* Hamburger Done */
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
