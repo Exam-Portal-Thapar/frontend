@@ -1,11 +1,9 @@
 import React from "react";
-import Header from './components/header';
-import Card from "./components/Card";
+import QuesPg from './components/QuesPg.jsx';
 function App() {
   return (
     <>
-      <Header/>
-      <Card/>
+      <QuesPg/>
     </>
   )
 }
